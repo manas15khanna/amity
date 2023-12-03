@@ -1,4 +1,4 @@
-1. Hello World
+ji1. Hello World
 2. Addition
 3. Subtraction
 4. Multiplication
@@ -50,8 +50,10 @@
 50. 2D array
 51. Printing an array of 2D array
 52. Taking input from user in 2D array
-
-Seperate odd and even from array
-Sort array in decending order
-Delete desired position from array
+53. Seperate odd and even from array
+54. Sort array in decending order
+55. Delete desired position from array
+56. WAP string palindrome without function
+57. Find the total number of alphabets,digits and special characters
+58. Convert lower case string to upper case
 
