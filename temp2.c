@@ -13,14 +13,14 @@ int len ,result;
     printf("%s\n", str2); 
   result = strcmp(str1, str2);
     printf("%d\n", result);
-} 
+}
 // STRING LENGTH CODE
 void main()
 {
 char str[20];
 int i, length=0;
 printf("Enter String\n");
-scanf("%s",str);
+fgets(str, 20, stdin);
 for(i=0;str[i]!='\0';i++)
 length++;
 printf("Length of string %s is %d\n",str,length);
@@ -72,22 +72,23 @@ int main(){
     printf("%c",str[i]);
       }
   printf("\n\n");
-}
+}*/
 //PALINDROME
-int main()
+int main()
 {
-  char a[100], b[100];
+  char a[100], b[100];
   printf("Enter a string to check if it's a palindrome\n");
   scanf("%s", a);
-  strcpy(b, a); 
-  strrev(b);  
-  if (strcmp(a, b) == 0)  
-    printf("The string is a palindrome.\n");
-  else {
+  strcpy(b,a);
+  strrev(b);
+    if(strcmp(a,b)==0)
+      printf("The string is a palindrome.\n");
+  else 
+  {
     printf("The string isn't a palindrome.\n");
   }
-  return 0;
-}*/
+  return 0;
+}/*
 //PALINDROME WITHOUT FUNCTION
 void main()  
  {      
@@ -109,4 +110,5 @@ printf("Length of string is %d\n", length);
     printf("string is not a palindrome\n");   
  else 
  printf("string is a palindrome\n");      
-}
+}*/ 
+

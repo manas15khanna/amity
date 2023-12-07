@@ -20,6 +20,6 @@ int main()
     special++;
     }
   }
-  printf("The string has:\nUppercase: %d\nLowercase: %d\nDigits: %d\nSpecial: %d");
+  printf("The string has:\nUppercase: %d\nLowercase: %d\nDigits: %d\nSpecial: %d", upperchar, lowchar, digit, special);
   return 0;
 }

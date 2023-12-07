@@ -1,4 +1,4 @@
-ji1. Hello World
+1. Hello World
 2. Addition
 3. Subtraction
 4. Multiplication

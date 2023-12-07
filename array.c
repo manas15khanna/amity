@@ -8,6 +8,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
+    printf("The ten elements in the array are:\n");
     for (i = 0; i < 10; i++)
     {
         printf("%d, ", arr[i]);

@@ -4,7 +4,7 @@ int main()
 {
     int a, b;
     printf("Enter number:");
-    scanf("%d", a);
+    scanf("%d", &a);
     b=sqrt(a);
     for (int i=2; i<=b; i++){
         if (a%i==0){

@@ -9,10 +9,10 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    for (i = 0; i < 10; i++)
+    /*for (i = 0; i < 10; i++)
     {
         printf("%d ", arr[i]);
-    }
+    }*/
     min=max=arr[0];
     for (int i=0; i<10; i++)
     {
