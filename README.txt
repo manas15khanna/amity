@@ -56,4 +56,13 @@
 56. WAP string palindrome without function
 57. Find the total number of alphabets,digits and special characters
 58. Convert lower case string to upper case
-
+59. Addition of two matrices
+60. Subtraction of two matrices
+61. Multiplication of two matrices
+62. Use functions to add two numbers in different ways
+63. Calculate fibonacci using functions
+64. Find out how pointers work
+65. Make a structure in C language to get employee details of a firm
+66. Find out the max salary employee details from that structure
+67. Addition of two numbers using call by value
+68. Addition of two numbers using call by reference
