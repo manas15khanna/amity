@@ -29,7 +29,7 @@ int main(){
     }
     for(i=0; i<a; i++){
         for(j=0; j<b; j++){
-            printf("%d \t" ,sum[i][j]);
+            printf("[%d] " ,sum[i][j]);
         }
         printf("\n");
     }

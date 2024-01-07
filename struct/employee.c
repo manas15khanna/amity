@@ -25,7 +25,6 @@ int main()
   }
   float maxSalary = emp[0].salary;
   int maxSalaryIndex = 0;
-
   printf("ID\tName\tDepartment\tAge\tSalary\n");
   for (int i=0;i<x ; i++) {
     printf("%d\t%s\t%s\t\t%d\t%f\n", emp[i].empId, emp[i].name, emp[i].dep, emp[i].age, emp[i].salary);
@@ -38,7 +37,6 @@ int main()
             maxSalaryIndex = i;
         }
     }
-
     // Print details of the person with the maximum salary
     printf("\nPerson with the maximum salary:\n");
     printf("ID: %d\nName: %s\nDepartment: %s\nAge: %d\nSalary: %f\n", 
