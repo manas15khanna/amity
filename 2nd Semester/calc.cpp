@@ -1,6 +1,4 @@
 #include <iostream>
-#include <ostream>
-#include <sys/types.h>
 int main()
 {
   int a, b, x;
@@ -10,7 +8,7 @@ int main()
   int sum=a+b;
   int sub=a-b;
   int mul=a*b;
-  float div=a/b;
+  int div=a/b;
   int mod=a%b;
   std::cout<<"Choose from sum, sub, mul, div and mod:";
   std::cin>>x;
