@@ -23,5 +23,4 @@ int main()
     printf("%d  ", odd[i]);
   }
   printf("\n");
-  return 0;
 }
