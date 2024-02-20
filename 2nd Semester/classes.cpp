@@ -8,6 +8,6 @@ class Car{
 };
 int main()
 {
-  Car MBUSA;
-  MBUSA.honk();
+  Car BMW;
+  BMW.honk();
 }
