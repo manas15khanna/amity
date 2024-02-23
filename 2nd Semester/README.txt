@@ -16,3 +16,6 @@ Multiplication of a number
 simple interest and compound interest
 area and perimeter of circle
 area and perimeter of rectangle
+sum of first 10 natural numbers
+find GCD and LCM
+find factorial of a number
