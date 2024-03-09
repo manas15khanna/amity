@@ -24,3 +24,11 @@ palindrome
 temperature
 reverse a number
 ascii
+largest number among 5 numbers
+print right half pyramid
+print left half pyramid
+Create a class car, data members company and top speed and function members set data and display data.
+Create a class car, data members company and top speed and function members set data and display data externally.
+Class employee internally
+class employee externally
+Create a class operator having data members number1 and number2 and data members Addition, Subtraction, Division, Modulus and Multiplication with 2 objects.
