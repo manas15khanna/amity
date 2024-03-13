@@ -32,3 +32,6 @@ Create a class car, data members company and top speed and function members set 
 Class employee internally
 class employee externally
 Create a class operator having data members number1 and number2 and data members Addition, Subtraction, Division, Modulus and Multiplication with 2 objects.
+Write a program to print the fibonacci series in c++.
+Write a program to find both the largest and smallest number in list of integers.
+Write a program to implement a class student with appropiate member functions and variables with a list of students.
