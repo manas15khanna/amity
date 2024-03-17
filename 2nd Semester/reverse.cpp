@@ -1,4 +1,4 @@
-//Wednesday, 28 February
+//Wednesday 28 February
 #include <iostream>
 int main()
 {
