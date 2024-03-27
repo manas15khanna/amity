@@ -36,3 +36,5 @@ Find out area of rectangle using classes.
 Write a program to print the fibonacci series in c++.
 Write a program to find both the largest and smallest number in list of integers.
 Write a program to implement a class student with appropiate member functions and variables with a list of students.
+Find area of rectangle using constructor
+make a piggie bank, use constructors to add money to it in the form of one parameter and no parameter. Use one parameter to add to the starting 50$, and use no parameter to add no money to it.
