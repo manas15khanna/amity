@@ -8,18 +8,18 @@ private:
     float Price;
 public:
     Vehicle() {}
-    Vehicle(float Mileage, float Price) {
-        this->Mileage = Mileage;
-        this->Price = Price;
-    }
+    Vehicle(float mileage, float price) : Mileage(mileage), Price(price) {}
+
     float getMileage() {
-        return this->Mileage;
+        return Mileage;
     }
+
     float getPrice() {
-        return this->Price;
+        return Price;
     }
-    virtual void display() {
-        cout << "Mileage: " << Mileage << "\n";
+
+    void display() {
+        cout << "Mileage: " << Mileage << " km/l\n";
         cout << "Price: $" << Price << "\n";
     }
 };
@@ -32,25 +32,25 @@ private:
     double FuelTankSize;
 public:
     Car() {}
-    Car(float Mileage, float Price, float OwnershipCost, int Warranty, int SeatingCapacity, double FuelTankSize)
-        : Vehicle(Mileage, Price) {
-        this->OwnershipCost = OwnershipCost;
-        this->Warranty = Warranty;
-        this->SeatingCapacity = SeatingCapacity;
-        this->FuelTankSize = FuelTankSize;
-    }
+    Car(float mileage, float price, float ownershipCost, int warranty, int seatingCapacity, double fuelTankSize)
+        : Vehicle(mileage, price), OwnershipCost(ownershipCost), Warranty(warranty), SeatingCapacity(seatingCapacity), FuelTankSize(fuelTankSize) {}
+
     float getOwnershipCost() {
-        return this->OwnershipCost;
+        return OwnershipCost;
     }
+
     int getWarranty() {
-        return this->Warranty;
+        return Warranty;
     }
+
     int getSeatingCapacity() {
-        return this->SeatingCapacity;
+        return SeatingCapacity;
     }
+
     double getFuelTankSize() {
-        return this->FuelTankSize;
+        return FuelTankSize;
     }
+
     void display() {
         cout << "Car\n";
         Vehicle::display();
@@ -70,28 +70,22 @@ private:
     double FuelTankSize;
 public:
     Bike() {}
-    Bike(float Mileage, float Price, int NumberCylinders, int NumberGears, string CoolingType, string WheelType, double FuelTankSize)
-        : Vehicle(Mileage, Price) {
-        this->NumberCylinders = NumberCylinders;
-        this->NumberGears = NumberGears;
-        this->CoolingType = CoolingType;
-        this->WheelType = WheelType;
-        this->FuelTankSize = FuelTankSize;
-    }
+    Bike(float mileage, float price, int numberCylinders, int numberGears, string coolingType, string wheelType, double fuelTankSize)
+        : Vehicle(mileage, price), NumberCylinders(numberCylinders), NumberGears(numberGears), CoolingType(coolingType), WheelType(wheelType), FuelTankSize(fuelTankSize) {}
     int getNumberCylinders() {
-        return this->NumberCylinders;
+        return NumberCylinders;
     }
     int getNumberGears() {
-        return this->NumberGears;
+        return NumberGears;
     }
     string getCoolingType() {
-        return this->CoolingType;
+        return CoolingType;
     }
     string getWheelType() {
-        return this->WheelType;
+        return WheelType;
     }
     double getFuelTankSize() {
-        return this->FuelTankSize;
+        return FuelTankSize;
     }
     void display() {
         cout << "Bike\n";
@@ -107,10 +101,8 @@ class Porsche : public Car {
 private:
     string ModelType;
 public:
-    Porsche(float Mileage, float Price, float OwnershipCost, int Warranty, int SeatingCapacity, double FuelTankSize, string ModelType)
-        : Car(Mileage, Price, OwnershipCost, Warranty, SeatingCapacity, FuelTankSize) {
-        this->ModelType = ModelType;
-    }
+    Porsche(float mileage, float price, float ownershipCost, int warranty, int seatingCapacity, double fuelTankSize, string modelType)
+        : Car(mileage, price, ownershipCost, warranty, seatingCapacity, fuelTankSize), ModelType(modelType) {}
     void display() {
         Car::display();
         cout << "Model Type: " << ModelType << "\n";
@@ -120,10 +112,8 @@ class Volvo : public Car {
 private:
     string ModelType;
 public:
-    Volvo(float Mileage, float Price, float OwnershipCost, int Warranty, int SeatingCapacity, double FuelTankSize, string ModelType)
-        : Car(Mileage, Price, OwnershipCost, Warranty, SeatingCapacity, FuelTankSize) {
-        this->ModelType = ModelType;
-    }
+    Volvo(float mileage, float price, float ownershipCost, int warranty, int seatingCapacity, double fuelTankSize, string modelType)
+        : Car(mileage, price, ownershipCost, warranty, seatingCapacity, fuelTankSize), ModelType(modelType) {}
     void display() {
         Car::display();
         cout << "Model Type: " << ModelType << "\n";
@@ -133,10 +123,8 @@ class Ducati : public Bike {
 private:
     string MakeType;
 public:
-    Ducati(float Mileage, float Price, int NumberCylinders, int NumberGears, string CoolingType, string WheelType, double FuelTankSize, string MakeType)
-        : Bike(Mileage, Price, NumberCylinders, NumberGears, CoolingType, WheelType, FuelTankSize) {
-        this->MakeType = MakeType;
-    }
+    Ducati(float mileage, float price, int numberCylinders, int numberGears, string coolingType, string wheelType, double fuelTankSize, string makeType)
+        : Bike(mileage, price, numberCylinders, numberGears, coolingType, wheelType, fuelTankSize), MakeType(makeType) {}
     void display() {
         Bike::display();
         cout << "Make Type: " << MakeType << "\n";
@@ -146,10 +134,8 @@ class BMW : public Bike {
 private:
     string MakeType;
 public:
-    BMW(float Mileage, float Price, int NumberCylinders, int NumberGears, string CoolingType, string WheelType, double FuelTankSize, string MakeType)
-        : Bike(Mileage, Price, NumberCylinders, NumberGears, CoolingType, WheelType, FuelTankSize) {
-        this->MakeType = MakeType;
-    }
+    BMW(float mileage, float price, int numberCylinders, int numberGears, string coolingType, string wheelType, double fuelTankSize, string makeType)
+        : Bike(mileage, price, numberCylinders, numberGears, coolingType, wheelType, fuelTankSize), MakeType(makeType) {}
     void display() {
         Bike::display();
         cout << "Make Type: " << MakeType << "\n";
@@ -158,8 +144,8 @@ public:
 int main() {
     Porsche carPorsche(15, 100000, 5000, 5, 4, 60, "911 Carrera");
     Volvo carVolvo(12, 80000, 4000, 3, 5, 70, "XC90");
-    Ducati bikeDucati(18, 20000, 4, 6, "Liquid", "Alloy", 15, "Monster");
-    BMW bikeBMW(20, 22000, 4, 6, "Air", "Spoke", 17, "S1000RR");
+    Ducati bikeDucati(18, 20000, 2, 6, "Liquid", "Alloy", 15, "Panigale V4");
+    BMW bikeBMW(20, 22000, 2, 6, "Air", "Spoke", 17, "S1000RR");
     carPorsche.display();
     cout << "\n";
     carVolvo.display();
@@ -169,4 +155,3 @@ int main() {
     bikeBMW.display();
     return 0;
 }
-
