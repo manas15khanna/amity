@@ -86,12 +86,12 @@ public:
   void giveintel(){
     cout<<"Mileage:"<<mileage<<endl;
     cout<<"price:"<<price<<endl;
-    cout<<"numberOfCylenders:"<<numberOfCylenders;
-    cout<<"numberOfGears:"<<numberOfGears;
-    cout<<"coolingType:"<<coolingType;
-    cout<<"wheelType:"<<wheelType;
-    cout<<"fuelTankSize:"<<fuelTankSize;
-    cout<<"makeType:"<<makeType;
+    cout<<"numberOfCylenders:"<<numberOfCylenders<<endl;
+    cout<<"numberOfGears:"<<numberOfGears<<endl;
+    cout<<"coolingType:"<<coolingType<<endl;
+    cout<<"wheelType:"<<wheelType<<endl;
+    cout<<"fuelTankSize:"<<fuelTankSize<<endl;
+    cout<<"makeType:"<<makeType<<endl;
   }
 };
 
@@ -111,12 +111,12 @@ public:
   void giveintel(){
     cout<<"Mileage:"<<mileage<<endl;
     cout<<"price:"<<price<<endl;
-    cout<<"numberOfCylenders:"<<numberOfCylenders;
-    cout<<"numberOfGears:"<<numberOfGears;
-    cout<<"coolingType:"<<coolingType;
-    cout<<"wheelType:"<<wheelType;
-    cout<<"fuelTankSize:"<<fuelTankSize;
-    cout<<"makeType:"<<makeType;
+    cout<<"numberOfCylenders:"<<numberOfCylenders<<endl;
+    cout<<"numberOfGears:"<<numberOfGears<<endl;
+    cout<<"coolingType:"<<coolingType<<endl;
+    cout<<"wheelType:"<<wheelType<<endl;
+    cout<<"fuelTankSize:"<<fuelTankSize<<endl;
+    cout<<"makeType:"<<makeType<<endl;
   }
 };
 int main(){
