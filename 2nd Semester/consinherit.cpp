@@ -16,7 +16,7 @@ public:
     cout << "Fuel class constructor called" << endl;
   }
   void display2() {
-    cout << "Fuel Class" << endl;
+    cout << "Fuel class" << endl;
   }
 };
 class Petrol : public Liquid, public Fuel {
@@ -25,7 +25,7 @@ public:
     cout << "Petrol class constructor called" << endl;
   }
   void display3() {
-    cout << "Petrol Class inherits both Fuel and Liquid" << endl;
+    cout << "Petrol class inherits both Fuel and Liquid" << endl;
   }
 };
 class Coal : public Fuel {
@@ -34,9 +34,10 @@ public:
     cout << "Coal class constructor called" << endl;
   }
   void display4() {
-    cout << "Coal Class single inherits Fuel" << endl;
+    cout << "Coal class single inherits Fuel" << endl;
   }
 };
+
 class Residue : public Coal {
 public:
   Residue() {
@@ -47,18 +48,27 @@ public:
   }
 };
 int main() {
+  cout << "Creating Liquid object" << endl;
   Liquid l;
   l.display1();
   cout << endl;
+
+  cout << "Creating Fuel object" << endl;
   Fuel f;
   f.display2();
   cout << endl;
+
+  cout << "Creating Petrol object" << endl;
   Petrol p;
   p.display3();
   cout << endl;
+
+  cout << "Creating Coal object" << endl;
   Coal c;
   c.display4();
   cout << endl;
+
+  cout << "Creating Residue object" << endl;
   Residue r;
   r.display5();
   cout << endl;
