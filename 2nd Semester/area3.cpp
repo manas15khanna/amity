@@ -1,4 +1,4 @@
-//Create a class rectangle and square that inherit the class area to find the area of rectangle and square respectively using the concept of friend function, pointers and objects.
+//Create a class rectangle and square that inherit the class area to find the area of rectangle and square respectively using the concept of friend function, pointers and objects
 #include <iostream>
 using namespace std;
 class Area{
